@@ -6,15 +6,15 @@ from time import sleep
 
 def paste(text: str):    
     pyperclip.copy(text)
-    #press_and_release('ctrl + v')
+    press_and_release('ctrl + v')
 
 def spamer():
     pag.typewrite(pyperclip.paste())
     pag.press("enter")
     sleep(1)
 
-#wb.open('https://www.youtube.com/watch?v=BfJFvrxhTDw')
-#time.sleep(10)
+wb.open('https://www.youtube.com/watch?v=BfJFvrxhTDw')
+sleep(10)
 while True:
     paste('ТЕСТ')
     spamer()
